@@ -9,6 +9,16 @@
   }
 }
 
+.panel-default {
+  .panel-heading {
+    color: $text-dark;
+    background: $gray;
+  }
+  .panel-body {
+    border: 1px solid $gray;
+  }
+}
+
 .panel-primary {
   .panel-heading {
     background: $primary;
