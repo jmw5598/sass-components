@@ -1,0 +1,55 @@
+.panel {
+  .panel-heading {
+    padding: $padding-container;
+    color: $text-light;
+  }
+  .panel-body {
+    padding: $padding-container;
+    background: #f8f8f8;
+  }
+}
+
+.panel-primary {
+  .panel-heading {
+    background: $primary;
+  }
+  .panel-body {
+    border: 1px solid $primary;
+  }
+}
+
+.panel-success {
+  .panel-heading {
+    background: $success;
+  }
+  .panel-body {
+    border: 1px solid $success;
+  }
+}
+
+.panel-info {
+  .panel-heading {
+    background: $info;
+  }
+  .panel-body {
+    border: 1px solid $info;
+  }
+}
+
+.panel-warning {
+  .panel-heading {
+    background: $warning;
+  }
+  .panel-body {
+    border: 1px solid $warning;
+  }
+}
+
+.panel-danger {
+  .panel-heading {
+    background: $danger;
+  }
+  .panel-body {
+    border: 1px solid $danger;
+  }
+}
