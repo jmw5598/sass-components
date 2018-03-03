@@ -25,6 +25,25 @@
 }
 
 // Double tape on top corners
+.scotchtape-top-bottom-center {
+  &:before {
+    width: 25%;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include common-tape-props;
+  }
+
+  &:after {
+    width: 25%;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include common-tape-props;
+  }
+}
+
+// Double tape on top corners
 .scotchtape-top-corners {
   &:before {
     width: 100px;
