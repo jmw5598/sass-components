@@ -1,0 +1,13 @@
+.stickynote {
+  background: $bg-stickynote;
+
+  .stickynote-heading {
+    background: $bg-stickynote-heading;
+    padding: $padding-container;
+  }
+
+  .stickynote-body {
+    padding: $padding-container;
+  }
+
+}
