@@ -1,19 +1,82 @@
+@mixin common-tape-props {
+  content: '';
+  display: block;
+  height: 30px;
+  position: absolute;
+  background: rgba(128,128,128,0.1);
+  -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
 .scotchtape {
   position: relative;
 }
 
-.scotchtape-top{
+// Single tape in center
+.scotchtape-top-center {
   &:before {
-    content: '';
-    display: block;
     width: 25%;
-    height: 30px;
-    position: relative;
-    top: 20px;
-    margin: auto;
-    background: rgba(128,128,128,0.1);
-    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include common-tape-props
+  }
+}
+
+// Double tape on top corners
+.scotchtape-top-corners {
+  &:before {
+    width: 100px;
+    top: 0;
+    left: -36px;
+    transform: rotate(315deg);
+    @include common-tape-props
+  }
+
+  &:after {
+    width: 100px;
+    top: 0px;
+    right: -36px;
+    transform: rotate(45deg);
+    @include common-tape-props
+  }
+}
+
+// Double tape diangal corners (top to bottom, left to right)
+.scotchtape-diagonal-corners {
+  &:before {
+    width: 100px;
+    top: 0;
+    left: -36px;
+    transform: rotate(315deg);
+    @include common-tape-props
+  }
+
+  &:after {
+    width: 100px;
+    bottom: 0px;
+    right: -36px;
+    transform: rotate(315deg);
+    @include common-tape-props
+  }
+}
+
+// Double tape diangal corners (top to bottom, left to right)
+.scotchtape-diagonal-corners-alt {
+  &:before {
+    width: 100px;
+    top: 0px;
+    right: -36px;
+    transform: rotate(45deg);
+    @include common-tape-props
+  }
+
+  &:after {
+    width: 100px;
+    bottom: 0;
+    left: -36px;
+    transform: rotate(45deg);
+    @include common-tape-props
   }
 }
