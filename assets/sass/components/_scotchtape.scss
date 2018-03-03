@@ -20,7 +20,7 @@
     top: -20px;
     left: 50%;
     transform: translateX(-50%);
-    @include common-tape-props
+    @include common-tape-props;
   }
 }
 
@@ -31,7 +31,7 @@
     top: 0;
     left: -36px;
     transform: rotate(315deg);
-    @include common-tape-props
+    @include common-tape-props;
   }
 
   &:after {
@@ -39,7 +39,7 @@
     top: 0px;
     right: -36px;
     transform: rotate(45deg);
-    @include common-tape-props
+    @include common-tape-props;
   }
 }
 
@@ -50,7 +50,7 @@
     top: 0;
     left: -36px;
     transform: rotate(315deg);
-    @include common-tape-props
+    @include common-tape-props;
   }
 
   &:after {
@@ -58,7 +58,7 @@
     bottom: 0px;
     right: -36px;
     transform: rotate(315deg);
-    @include common-tape-props
+    @include common-tape-props;
   }
 }
 
@@ -69,7 +69,7 @@
     top: 0px;
     right: -36px;
     transform: rotate(45deg);
-    @include common-tape-props
+    @include common-tape-props;
   }
 
   &:after {
@@ -77,6 +77,6 @@
     bottom: 0;
     left: -36px;
     transform: rotate(45deg);
-    @include common-tape-props
+    @include common-tape-props;
   }
 }
