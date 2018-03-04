@@ -1,0 +1,62 @@
+.form-checkbox {
+  position: relative;
+  height: 30px;
+  margin-bottom: 8px;
+  label {
+    font-size: .8rem;
+    line-height: 30px;
+    height: 30px;
+    position: absolute;
+    padding: 0px 16px;
+    &:before {
+      position: absolute;
+      top: 0;
+      left: -26px;
+      content: '';
+      color: $text-light;
+      line-height: 30px;
+      text-align: center;
+      width: 30px;
+      height: 30px;
+      background: $gray;
+      border-radius: 2px;
+      @include transition-all(.1s);
+    }
+  }
+  input[type="checkbox"] {
+    visibility: hidden;
+    &:checked {
+      &+label {
+        &:before {
+          content: '\2714';
+          background: #CDCED6
+        }
+      }
+      &+ .primary {
+        &:before {
+          background: $primary;
+        }
+      }
+      &+ .success {
+        &:before {
+          background: $success;
+        }
+      }
+      &+ .info {
+        &:before {
+          background: $info;
+        }
+      }
+      &+ .warning {
+        &:before {
+          background: $warning;
+        }
+      }
+      &+ .danger {
+        &:before {
+          background: $danger;
+        }
+      }
+    }
+  }
+}
