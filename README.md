@@ -2,7 +2,7 @@
 This is a repository I'm using for learning more about Sass and frontend development tooling.
 
 ## Demo
-[Plnkr Demo](https://run.plnkr.co/FTK5LugsyaZIz8DX/)
+[Plnkr Demo](https://plnkr.co/edit/H2Ctdwc2WUneVDgIwepE?p=preview)
 
 ## Components
 
