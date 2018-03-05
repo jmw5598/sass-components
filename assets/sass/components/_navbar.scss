@@ -46,6 +46,7 @@
         display: block;
         line-height: 48px;
         text-decoration: none;
+        color: $primary;
         &:visited, :hover, :active {
           color: $primary;
         }
