@@ -1,0 +1,71 @@
+.navbar {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  background: #FFF;
+  padding: 0 16px;
+  border-bottom: 2px solid $gray;
+  z-index: 2;
+  font-size: 13px;
+  font-weight: lighter;
+  .navbar-nav {
+    position: relative;
+    background: $white;
+
+    .active {
+      background: $gray-light;
+      border-left: 1px solid $gray;
+      border-right: 1px solid $gray;
+    }
+
+    & > li {
+      display: inline;
+      float: left;
+      position: relative;
+      @include transition-all(.2s);
+
+      .navbar-dropdown {
+        display: none;
+        position: absolute;
+        opacity: 0;
+        min-width: 200px;
+        @include boxshadow;
+
+        &>li {
+            background: $white;
+          &:hover {
+            background: $gray-light;
+          }
+        }
+      }
+
+      a {
+        padding: 0 16px;
+        display: block;
+        line-height: 48px;
+        text-decoration: none;
+        &:visited, :hover, :active {
+          color: $primary;
+        }
+      }
+
+      &:hover {
+        background: $gray-light;
+        .navbar-dropdown {
+          display: block;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+    }
+  }
+}
